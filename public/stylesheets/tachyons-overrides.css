@@ -1,3 +1,9 @@
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility !important;
+}
 .dib {
     display: inline-block;
 }
@@ -46,8 +52,11 @@ dt {
 }
 
 .gradient-blue-text {
-    background:  linear-gradient(90deg,#895cf2,#461fef);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  display: inline-block; 
+  background:  linear-gradient(90deg,#895cf2,#461fef);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  image-rendering: -webkit-optimize-contrast;
 }
+
 
