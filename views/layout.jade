@@ -2,12 +2,13 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    //link(rel='stylesheet', href='/stylesheets/style.css')
     meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    link(rel='stylesheet', href='/stylesheets/style.css')
     link(href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet")
+    link(href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css" rel="stylesheet")
+    link(href="/stylesheets/tachyons-overrides.css" rel="stylesheet")
 
-  body
-    .container
+  body.sans-serif.bg-black
+    .fl.w-100.pa3.white.avenir
       block content
